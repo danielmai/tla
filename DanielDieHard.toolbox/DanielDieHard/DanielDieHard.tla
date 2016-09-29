@@ -20,7 +20,7 @@ EmptyBig == /\ big' = 0
 SmallToBig ==
   LET poured == Min(big + small, 5) - big
   IN  /\ big' = big + poured
-      /\ small = small - poured
+      /\ small' = small - poured
 BigToSmall ==
   LET poured == Min(big + small, 3) - small
   IN  /\ big' = big - poured
@@ -34,5 +34,5 @@ Next == \/ FillSmall
 
 =============================================================================
 \* Modification History
-\* Last modified Wed Jul 27 16:05:24 PDT 2016 by Daniel
+\* Last modified Wed Aug 24 18:09:14 PDT 2016 by Daniel
 \* Created Wed Jul 27 15:34:04 PDT 2016 by Daniel

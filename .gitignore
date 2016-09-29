@@ -1,0 +1,6 @@
+*.cfg
+*.out
+*.pmap
+.project
+.settings
+*.launch
