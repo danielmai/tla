@@ -18,13 +18,7 @@ GCD(m, n) ==
 \* How can you easily find pairs of numbers whose gcd you know in order to test the definition?
 \*
 
-GCD1 == \A m \in Nat \ {0} : GCD(m, m) = m
-GCD2 == \A m, n \in Nat \ {0} : GCD(m, n) = GCD(n, m)
-GCD3 == \A m, n \in Nat \ {0} : (n > m) => (GCD(m, n) = GCD(m, n - m))
-
-SetGCD(T) == SetMax({d \in Int : \A t \in T : Divides(d, t)}) 
-
 =============================================================================
 \* Modification History
-\* Last modified Mon Nov 07 18:40:02 PST 2016 by Daniel
+\* Last modified Wed Sep 14 07:28:31 PDT 2016 by Daniel
 \* Created Wed Aug 24 18:02:30 PDT 2016 by Daniel
